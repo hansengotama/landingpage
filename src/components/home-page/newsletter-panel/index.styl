@@ -1,0 +1,68 @@
+#newsletter-panel
+    width 100%
+    max-width 640px
+    position fixed
+    bottom 0
+    left 0
+    z-index 99999
+    background rgba(0, 123, 193, 0.9)
+
+    .container
+        padding 10px
+
+        .close-button
+            cursor pointer
+            color white
+            font-size 16px
+            text-align right
+
+        .content
+            padding 15px
+
+            .title
+                color white
+                font-size 26px
+                margin-top 20px
+
+            .description
+                color white
+                margin-top 10px
+                line-height 25px
+                font-size 16px
+
+            .form
+                display flex
+                width 100%
+                margin 20px 0 10px
+
+                @media screen and (max-width: 640px)
+                    flex-direction column
+
+                .simple-input
+                    background white
+                    padding 10px 5px
+                    width 100%
+
+                    @media screen and (max-width: 640px)
+                        width auto
+
+                .simple-button
+                    color white
+                    padding 10px
+                    width 110px
+                    border-color #cc6600
+                    margin-left 10px
+
+                    @media screen and (max-width: 640px)
+                        width 100%
+                        margin-top 10px
+                        margin-left 0
+
+.slide-up-down-enter-active
+    transition all 1.5s ease-in
+
+.slide-up-down-leave-active
+    transition all 1.5s ease-out
+
+.slide-up-down-enter, .slide-up-down-leave-to
+    transform translateY(300px)
